@@ -1,0 +1,267 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('Carbon_fiber.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Navigation Bar */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #000; 
+    color: #fff;
+    z-index: 1000;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0 20px; 
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 50px; 
+    height: auto;
+    margin-right: 20px; 
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0 10px;
+    line-height: 15px; 
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 80vh;
+    background: url('Blue\ lambo.jpeg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 60px; 
+}
+
+.hero-content {
+    text-align: center;
+    color: goldenrod;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+
+
+/* Press Here Button */
+.press-button {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.press-button img {
+    cursor: pointer;
+    width: 150px;
+}
+
+.press-button p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #d4af37;
+}
+
+/* Models Section */
+.models {
+    padding: 4rem 1rem;
+}
+
+.model-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.model {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.model.left {
+    align-self: flex-start;
+}
+
+.model.right {
+    align-self: flex-end;
+}
+
+.model img {
+    width: 100%;
+    display: block;
+}
+
+.model-name {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #d4af37; 
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.description {
+    display: none;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 1rem;
+}
+
+/* Show description on click */
+.model.active .description {
+    display: block;
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 4rem 1rem;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.gallery-container img {
+    width: 18%;
+    border-radius: 10px;
+}
+
+/* About Us Section */
+.about {
+    padding: 4rem 1rem;
+    background: url('Lamborghini\ engine.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.about-content {
+    color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    
+}
+
+.about-content:before,
+.about-content:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.about-content:before {
+    top: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
+}
+
+.about-content:after {
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
+
+.about-content h2 {
+    color: #d4af37; 
+    text-align: center
+}
+
+/* Contact Us Section */
+.contact {
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #d4af37; 
+    font-size: 1.5rem;
+}
+
+.contact ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.contact ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Container for the image and gradient */
+/* .model.left {
+    position: relative;
+    width: 100%; 
+    height: 400px; 
+    background: url('XYZ.img') no-repeat center center; 
+    background-size: cover;
+}
+
+/* Gradient overlay */
+/* model.left::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%; 
+    height: 100%;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.6), transparent); 
+    pointer-events: none; 
+} /*
